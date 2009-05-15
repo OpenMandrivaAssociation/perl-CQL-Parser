@@ -1,6 +1,6 @@
 %define module   CQL-Parser
 %define version    1.0
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{module}
 Version:    %{version}
