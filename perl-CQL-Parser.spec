@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 
 Summary:	Compiles CQL strings into parse trees of Node subtypes
 License:	GPL+ or Artistic
