@@ -1,15 +1,13 @@
 %define upstream_name    CQL-Parser
-%define upstream_version 1.13
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.13
+Release:	2
 
 Summary:	Compiles CQL strings into parse trees of Node subtypes
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/bricas/cql-parser
-Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRICAS/CQL-Parser-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRICAS/CQL-Parser-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -32,7 +30,7 @@ human readable and human writable, and that the language be intuitive
 while maintaining the expressiveness of more complex languages.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
